@@ -1,0 +1,34 @@
+{
+  "name": "typescript-examples",
+  "version": "1.0.0",
+  "description": "TypeScript Examples",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rickbeerendonk/typescript-examples.git"
+  },
+  "author": "Rick Beerendonk",
+  "license": "EUPL-1.2",
+  "bugs": {
+    "url": "https://github.com/rickbeerendonk/typescript-examples/issues"
+  },
+  "homepage": "https://github.com/rickbeerendonk/typescript-examples#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run validate",
+      "pre-push": "npm run validate"
+    }
+  },
+  "devDependencies": {
+    "http-server": "0.11.1",
+    "husky": "^2.2.0",
+    "prettier": "^1.17.0",
+    "rimraf": "^2.6.3"
+  },
+  "scripts": {
+    "clean": "rimraf lib",
+    "openserver": "node \"./util - http-server/server.js\" 8040",
+    "prettier": "prettier --list-different '**/*.{json,ts,html}'",
+    "prettier-fix": "prettier --write '**/*.{json,ts,html}'",
+    "validate": "npm run prettier"
+  }
+}
