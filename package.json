@@ -19,14 +19,12 @@
     }
   },
   "devDependencies": {
-    "http-server": "0.11.1",
     "husky": "^2.2.0",
     "prettier": "^1.17.0",
     "rimraf": "^2.6.3"
   },
   "scripts": {
     "clean": "rimraf lib",
-    "openserver": "node \"./util - http-server/server.js\" 8040",
     "prettier": "prettier --list-different '**/*.{json,ts,html}'",
     "prettier-fix": "prettier --write '**/*.{json,ts,html}'",
     "validate": "npm run prettier"
