@@ -24,8 +24,8 @@
   },
   "scripts": {
     "clean": "rimraf lib",
-    "prettier": "prettier --list-different '**/*.{json,ts,html}'",
-    "prettier-fix": "prettier --write '**/*.{json,ts,html}'",
+    "prettier": "prettier --list-different '**/*.{html,json,md,ts}'",
+    "prettier-fix": "prettier --write '**/*.{html,json,md,ts}'",
     "validate": "npm run prettier"
   }
 }
