@@ -1,4 +1,6 @@
-# TypeScript Demos
+# TypeScript Examples
+
+Examples for [TypeScript](https://www.typescriptlang.org/).
 
 ![](https://img.shields.io/github/license/rickbeerendonk/typescript-examples.svg)
 
