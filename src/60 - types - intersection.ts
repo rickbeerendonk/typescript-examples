@@ -13,7 +13,7 @@ type Second = {
 
 type Intersection = First & Second;
 
-let intersection: Intersection = {
+const intersection: Intersection = {
   same: 'intersection',
   unique1: 1,
   unique2: 2
