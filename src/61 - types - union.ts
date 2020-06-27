@@ -3,15 +3,15 @@
 
 type Union = number | string;
 
-let x: Union;
+let union: Union;
 
-x = 123;
-console.log(x); // 123
+union = 123;
+console.log(union); // 123
 
-x = 'test';
-console.log(x); // test
+union = 'test';
+console.log(union); // test
 
 // Next lines will fail to compile:
-// x = true;
-// x = {};
-// x = [];
+// union = true;
+// union = {};
+// union = [];

@@ -1,15 +1,15 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
-interface Intf<T> {
+interface Intf1<T> {
   value: T;
 }
 
-function foo(value: Intf<number>) {
+function log1(value: Intf1<number>) {
   console.log(typeof value, value);
 }
 
-foo({ value: 123 }); // object { value: 123 }
+log1({ value: 123 }); // object { value: 123 }
 
 // Next lines will fail to compile:
 //foo({ value: 'test' });

@@ -1,10 +1,9 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2019 Rick Beerendonk          !*/
 
-let x = 123;
+let implicit = 123;
 
-console.log(x);
+console.log(implicit);
 
-x = 'one two three';
-
-console.log(x);
+// Next line doesn't compile
+//implicit = 'one two three';
