@@ -14,13 +14,17 @@ yarn.lock
 yarn-error.log
 
 #################
+## ESLint
+#################
+
+.eslintcache
+
+#################
 ## Other
 #################
 
-lib/
-
 #############
-## Windows detritus
+## Windows
 #############
 
 # Windows image file caches
@@ -34,7 +38,7 @@ Desktop.ini
 $RECYCLE.BIN/
 
 #############
-## Mac crap
+## Mac
 #############
 
 .DS_Store
