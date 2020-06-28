@@ -13,3 +13,5 @@ genericFunc<string>('two'); // string two
 
 // Next lines will fail to compile:
 //genericFunc<number>(true);
+
+export {};

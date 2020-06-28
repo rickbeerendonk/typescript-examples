@@ -18,3 +18,5 @@ log2({ first: 1, third: 3 }); // { first: 1, third: 3 }
 
 // Next line will fail to compile:
 //log({ fourth: 4 }); // { fourth: 4 }
+
+export {};

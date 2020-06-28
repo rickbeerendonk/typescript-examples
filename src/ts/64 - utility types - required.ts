@@ -17,3 +17,5 @@ log3({ first: 1, second: 2 }); // { first: 1, second: 2, }
 //log({});
 //log({ first: 1 });
 //log({ second: 2 });
+
+export {};

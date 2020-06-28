@@ -15,3 +15,5 @@ console.log(union); // test
 // union = true;
 // union = {};
 // union = [];
+
+export {};

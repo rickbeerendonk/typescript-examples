@@ -21,3 +21,5 @@ const intersection: Intersection = {
 
 console.log(intersection);
 // { same: 'intersection', unique1: 1, unique2: 2 }
+
+export {};
