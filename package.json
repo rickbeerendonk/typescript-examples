@@ -24,16 +24,16 @@
     "husky": "4.2.5",
     "prettier": "2.0.5",
     "rimraf": "3.0.2",
-    "typescript": "4.0.0-beta"
+    "typescript": "3.9.5"
   },
   "scripts": {
     "build": "npm run clean && node ./node_modules/typescript/bin/tsc --build",
     "build-watch": "npm run build -- --watch",
     "clean": "rimraf build",
-    "eslint": "eslint . --ext .js --cache",
-    "eslint-fix": "eslint . --ext .js --cache --fix",
-    "prettier": "prettier --list-different '**/*.{html,json,md,ts}'",
-    "prettier-fix": "prettier --write '**/*.{html,json,md,ts}'",
+    "eslint": "eslint . --ext .js,.ts,.tsx --cache",
+    "eslint-fix": "eslint . --ext .js,.ts,.tsx --cache --fix",
+    "prettier": "prettier --list-different '**/*.{html,json,md,ts,tsx}'",
+    "prettier-fix": "prettier --write '**/*.{html,json,md,ts,tsx}'",
     "validate": "npm run eslint && npm run prettier"
   }
 }
