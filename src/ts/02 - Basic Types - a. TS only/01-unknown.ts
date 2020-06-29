@@ -6,7 +6,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 
-let a: any;
+let a: unknown;
 
 // Can be anything
 
@@ -19,16 +19,17 @@ console.log('Number: ', a); // 123
 a = 'text';
 console.log('String: ', a); // text
 
-// Doesn't require a "cast"
-const x: string = a;
+// Does require a "cast"
+const x: string = <string>a;
 console.log('x: ', x);
 
+type Foo = { foo(): string };
 a = {
   foo: function () {
     return 'foo';
   }
 };
-// Doesn't require a "cast"
-console.log('a.foo():', a.foo());
+// Does require a "cast"
+console.log('a.foo():', (<Foo>a).foo());
 
 export {};
