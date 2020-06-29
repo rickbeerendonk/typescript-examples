@@ -2,7 +2,7 @@
 /*! Copyright © 2015 Rick Beerendonk          !*/
 
 const test = {
-  [Symbol.iterator]: function* () {
+  [Symbol.iterator]: function* (): Iterator<number> {
     let current = 1;
     while (true) {
       yield current++;

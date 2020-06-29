@@ -15,7 +15,7 @@ interface Iterable {
 */
 
 const test = {
-  [Symbol.iterator]() {
+  [Symbol.iterator](): Iterator<number> {
     let current = 0;
     return {
       next() {

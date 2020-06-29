@@ -4,7 +4,7 @@
 // ES 2018
 
 const test = {
-  [Symbol.asyncIterator]: function () {
+  [Symbol.asyncIterator]: function (): AsyncIterator<number, void, unknown> {
     let current = 0;
     return {
       next() {
