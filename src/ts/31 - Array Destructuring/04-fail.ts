@@ -8,7 +8,7 @@ const [firstValue] = someArray;
 console.log(firstValue); // undefined
 
 // Default
-const [firstValueOrDefault = 1] = someArray;
-console.log(firstValueOrDefault); // 1
+const [firstValueOrDefault = 'Default'] = someArray;
+console.log(firstValueOrDefault); // Default
 
 export {};
