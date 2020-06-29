@@ -15,7 +15,7 @@ console.log('b:', b); // 4.56
 console.log('typeof(b):', typeof b); // number
 
 // Infinity
-var c = 1 / 0;
+var c: number = 1 / 0;
 console.log('c:', c); // Infinity
 console.log('typeof(c):', typeof c); // number
 
