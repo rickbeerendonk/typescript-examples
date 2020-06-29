@@ -10,10 +10,12 @@ const obj = {
 
 const {
   committee,
-  edition: { year }
+  edition: { year },
+  edition
 } = obj;
 
 console.log(committee); // 'TC39'
 console.log(year); // 2015
+console.log(edition); // { version: 6, year: 2015 }
 
 export {};
