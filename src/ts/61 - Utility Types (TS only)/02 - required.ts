@@ -6,7 +6,7 @@ interface Intf3 {
   second?: number;
 }
 
-// Partial will mark all the fields as required
+// Required will mark all the fields as required
 function log3(value: Required<Intf3>) {
   console.log(value);
 }
