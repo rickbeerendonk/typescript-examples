@@ -9,7 +9,7 @@ type ObjWithName = {
 function five(a: ObjWithName): string;
 function five(a: string, b: number): string;
 // Implementation
-function five(a: string | { name: string }, b?: number): string {
+function five(a: string | ObjWithName, b?: number): string {
   return b ? <string>a + b.toString() : (<ObjWithName>a).name;
 }
 
