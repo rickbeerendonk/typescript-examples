@@ -12,5 +12,6 @@ const { committee, name: officialName } = obj;
 
 console.log(committee); // 'TC39'
 console.log(officialName); // 'EcmaScript'
+console.log(name); // '' // because undefined
 
 export {};
