@@ -5,8 +5,14 @@
 
 // https://github.com/tc39/proposal-optional-chaining
 
-const user = {
-  address: null
+type User = {
+  address?: {
+    street: string;
+  };
+};
+
+const user: User = {
+  address: undefined
 };
 
 console.log('user:', JSON.stringify(user));

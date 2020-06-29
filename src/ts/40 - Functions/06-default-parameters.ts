@@ -1,7 +1,7 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2015 Rick Beerendonk          !*/
 
-function test(a, b = 10, c = 'default', d = () => 'Hello world!') {
+function test(a?: number, b = 10, c = 'default', d = () => 'Hello world!') {
   console.log(a);
   console.log(b);
   console.log(c);

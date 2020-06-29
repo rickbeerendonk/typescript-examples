@@ -3,8 +3,14 @@
 
 // ES 2020
 
-const user = {
-  address: null
+type User = {
+  address?: {
+    street: string;
+  };
+};
+
+const user: User = {
+  address: undefined
 };
 
 // Would throw without ?.

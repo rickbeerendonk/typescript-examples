@@ -21,7 +21,7 @@ if (true) {
   console.log(b); // 2
 }
 
-// ReferenceError: b is not defined
-console.log(b);
+// TS: Doesn't compile
+//console.log(b); // JS: ReferenceError: b is not defined
 
 export {};
