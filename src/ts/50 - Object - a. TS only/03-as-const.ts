@@ -13,12 +13,14 @@ console.log(JSON.stringify(o1)); // {"prop1":false,"prop2":22}
 
 const o2 = {
   prop1: true,
-  prop2: 2
+  prop2: {
+    prop3: 3
+  }
 } as const;
 
 // Doesn't compile
-//o2.prop1 = false;
-//o2.prop2 = 22;
+// o2.prop1 = false;
+// o2.prop2.prop3 = 333;
 
 console.log(JSON.stringify(o2)); // {"prop1":true,"prop2":2}
 
