@@ -1,7 +1,6 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
-/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
@@ -30,6 +29,7 @@ a = {
   }
 };
 // Does require a "cast"
-console.log('a.foo():', (<Foo>a).foo());
+console.log('a.foo():', (<Foo>a).foo()); // Doesn't work in .tsx (with JSX/React)
+console.log('a.foo():', (a as Foo).foo()); // Works in .tsx (with JSX/React)
 
 export {};

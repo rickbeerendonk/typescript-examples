@@ -6,6 +6,7 @@ x = 'test';
 
 // We know it is a string.
 // TS can't verify this.
-console.log('length:', (<string>x).length);
+console.log('length:', (<string>x).length); // Doesn't work in .tsx (with JSX/React)
+console.log('length:', (x as string).length); // Works in .tsx (with JSX/React)
 
 export {};
