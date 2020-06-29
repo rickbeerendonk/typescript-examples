@@ -5,15 +5,15 @@
 
 // ES 2020
 
-const p1 = () =>
+const p1 = (): Promise<string> =>
   new Promise(function (resolve, reject) {
     setTimeout(() => resolve('Resolved 1'), 2000);
   });
-const p2 = () =>
+const p2 = (): Promise<string> =>
   new Promise(function (resolve, reject) {
     setTimeout(() => resolve('Resolved 2'), 1000);
   });
-const p3 = () =>
+const p3 = (): Promise<string> =>
   new Promise(function (resolve, reject) {
     setTimeout(() => reject('Rejected 3'), 1500);
   });

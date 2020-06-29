@@ -5,10 +5,10 @@
 
 // ES 2018
 
-const p1 = new Promise(function (resolve, reject) {
+const p1: Promise<string> = new Promise(function (resolve, reject) {
   setTimeout(() => resolve('Resolved'), 2000);
 });
-const p2 = new Promise(function (resolve, reject) {
+const p2: Promise<string> = new Promise(function (resolve, reject) {
   setTimeout(() => reject('Rejected'), 1000);
 });
 
