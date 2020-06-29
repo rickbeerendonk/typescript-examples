@@ -3,6 +3,7 @@
 /*! Copyright © 2019 Rick Beerendonk          !*/
 
 // ES 2020
+// TS 3.2
 
 // https://github.com/tc39/proposal-bigint
 

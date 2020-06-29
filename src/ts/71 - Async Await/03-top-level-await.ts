@@ -5,6 +5,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 
 // ES Stage 3
+// TS 3.8
 
 // https://github.com/tc39/proposal-top-level-await
 

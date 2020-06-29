@@ -2,6 +2,7 @@
 /*! Copyright © 2019 Rick Beerendonk          !*/
 
 // ES 2020
+// TS 3.7
 
 // https://github.com/tc39/proposal-optional-chaining
 
