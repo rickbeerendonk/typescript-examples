@@ -1,7 +1,7 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2018 Rick Beerendonk          !*/
 
-const country = 'The Netherlands';
+const country = 'The Netherlands' as string;
 
 switch (country) {
   case 'The Netherlands':
