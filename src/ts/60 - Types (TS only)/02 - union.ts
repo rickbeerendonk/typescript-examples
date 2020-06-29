@@ -1,9 +1,7 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
-type Union = number | string;
-
-let union: Union;
+let union: number | string;
 
 union = 123;
 console.log(union); // 123
