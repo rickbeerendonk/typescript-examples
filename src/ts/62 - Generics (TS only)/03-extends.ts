@@ -18,7 +18,7 @@ class Four {
 }
 
 function genericFunc<T extends One>(value: T) {
-  console.log(typeof value, value);
+  console.log(value.first);
 }
 
 genericFunc(new One());
@@ -26,6 +26,7 @@ genericFunc(new Two());
 
 // Does compile!!!
 genericFunc(new Three());
+genericFunc({ first: 123, second: 222 });
 
 // Doesn't compile
 //genericFunc(new Four());
