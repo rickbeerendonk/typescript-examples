@@ -1,5 +1,5 @@
 /*! European Union Public License version 1.2 !*/
-/*! Copyright © 2015 Rick Beerendonk          !*/
+/*! Copyright © 2020 Rick Beerendonk          !*/
 
 abstract class AbstractBase {
   abstract other(): number;
