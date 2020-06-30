@@ -1,9 +1,10 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2019 Rick Beerendonk          !*/
 
-interface IMyInterface1 {
+type IMyInterface1 = {
+  //id: number;
   first(): string;
-}
+};
 
 interface IMyInterface2 {
   second(): string;
