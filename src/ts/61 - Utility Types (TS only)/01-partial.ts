@@ -9,7 +9,7 @@ interface Intf1 {
 
 // Partial will mark all the fields as optional
 function log2(value: Partial<Intf1>) {
-  console.log(value);
+  console.log(JSON.stringify(value));
 }
 
 log2({}); // {}
