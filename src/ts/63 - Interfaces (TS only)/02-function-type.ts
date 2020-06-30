@@ -5,14 +5,11 @@ interface IMyFunc {
   (name: string, value: number): string;
 }
 
-const myFunc: IMyFunc = function (name: string, value: number) {
-  return name + value.toString();
-};
+const myFunc: IMyFunc = (name: string, value: number) =>
+  name + value.toString();
 
 // Doesn't compile:
-// let myFunc2: IMyFunc = function(name: string, value: string) {
-//     return name + value;
-// }
+//let myFunc2: IMyFunc = (name: string, value: string) => name + value;
 
 console.log(myFunc('Text', 123)); // Text123
 
