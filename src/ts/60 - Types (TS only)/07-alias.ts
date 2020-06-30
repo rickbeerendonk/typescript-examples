@@ -7,7 +7,7 @@ type Text = string;
 type TextFunc = () => string;
 type TextOrTextFunc = Text | TextFunc;
 
-function getText(val: TextOrTextFunc) {
+function getText(val: TextOrTextFunc): string {
   if (typeof val === 'string') {
     return val;
   } else {
