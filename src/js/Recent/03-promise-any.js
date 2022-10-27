@@ -1,7 +1,7 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
-// ES Stage 3
+// https://github.com/tc39/proposal-promise-any
 
 /* eslint no-unused-vars:warn */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */

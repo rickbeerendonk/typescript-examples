@@ -7,7 +7,6 @@
 
 // https://github.com/tc39/proposal-class-fields
 
-// ES Stage 3
 // TS 3.8
 
 class Test {
