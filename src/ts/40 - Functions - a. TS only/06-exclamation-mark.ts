@@ -6,7 +6,7 @@
 /* eslint-disable @typescript-eslint/require-await */
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 
-async function test(): Promise<number> {
+async function test1(): Promise<number> {
   let result: number;
 
   async function getResult() {
@@ -19,4 +19,9 @@ async function test(): Promise<number> {
   return result!;
 }
 
-export {};
+const response1 = test1();
+response1
+  .then((result) => {
+    console.log(result);
+  })
+  .catch((e) => console.error(e));
