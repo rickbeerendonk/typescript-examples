@@ -17,7 +17,7 @@ class Fourth extends Third {
   prop4 = 4;
 }
 
-function genericFunc<T, U extends T>(val1: T, val2: U) {
+function genericFunc<T extends object, U extends T>(val1: T, val2: U) {
   console.log(Object.keys(val1), Object.keys(val2));
 }
 
