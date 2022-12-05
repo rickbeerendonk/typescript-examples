@@ -12,7 +12,7 @@ function log1(value: Intf1<number>) {
 log1({ value: 123 }); // object { value: 123 }
 
 // Next lines will fail to compile:
-//foo({ value: 'test' });
-//foo({ value: true });
+//log1({ value: 'test' });
+//log1({ value: true });
 
 export {};
