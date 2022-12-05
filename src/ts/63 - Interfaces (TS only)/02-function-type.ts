@@ -5,7 +5,7 @@ interface IMyFunc {
   (name: string, value: number): string;
 }
 
-const myFunc: IMyFunc = (name: string, value: number) =>
+const myFunc: IMyFunc = (name: string, value: number): string =>
   name + value.toString();
 
 // Doesn't compile:
