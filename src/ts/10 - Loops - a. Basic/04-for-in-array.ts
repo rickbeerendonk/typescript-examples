@@ -4,7 +4,7 @@
 /* eslint @typescript-eslint/no-array-constructor: 1 */
 /* eslint @typescript-eslint/no-for-in-array: 1 */
 
-const players = new Array();
+const players = [];
 players[0] = 'Rafael Nadal';
 players[2] = 'Roger Federer';
 players[5] = 'Serena Williams';

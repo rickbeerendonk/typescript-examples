@@ -3,7 +3,13 @@
 
 // https://github.com/tc39/proposal-optional-chaining
 
-const user = {
+type User = {
+  address: null | {
+    street: string;
+  };
+};
+
+const user: User = {
   address: null
 };
 
