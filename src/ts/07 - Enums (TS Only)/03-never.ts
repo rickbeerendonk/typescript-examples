@@ -6,11 +6,11 @@
 enum Color {
   R,
   G,
-  B,
-  Y
+  B
+  //Y
 }
 
-const colorName = (color: Color) => {
+const colorName = (color: Color): string => {
   switch (color) {
     case Color.R:
       return 'Red';
@@ -18,7 +18,6 @@ const colorName = (color: Color) => {
       return 'Green';
     case Color.B:
       return 'Blue';
-
     default:
       const _exhaustiveCheck: never = color;
       return _exhaustiveCheck;
