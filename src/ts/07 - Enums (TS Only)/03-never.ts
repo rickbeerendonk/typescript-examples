@@ -24,4 +24,6 @@ const colorName = (color: Color): string => {
   }
 };
 
+console.log(colorName(Color.R));
+
 export {};
