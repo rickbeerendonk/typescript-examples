@@ -12,7 +12,7 @@ const test = {
     return {
       next() {
         current++;
-        return new Promise(function (resolve, reject) {
+        return new Promise(function (resolve) {
           setTimeout(
             () => resolve({ done: false, value: current }),
             1000 * Math.random()

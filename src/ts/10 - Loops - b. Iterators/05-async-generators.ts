@@ -1,7 +1,7 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2018 Rick Beerendonk          !*/
 
-/* eslint @typescript-eslint/require-await: 1 */
+/* eslint-disable @typescript-eslint/require-await */
 
 // ES 2018
 

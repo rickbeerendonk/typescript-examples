@@ -4,11 +4,11 @@
 /* eslint no-unused-vars:warn */
 
 const p1 = (): Promise<string> =>
-  new Promise(function (resolve, reject) {
+  new Promise(function (resolve) {
     setTimeout(() => resolve('Server result'), 4000);
   });
 const p2 = (): Promise<string> =>
-  new Promise(function (resolve, reject) {
+  new Promise(function (resolve) {
     setTimeout(() => resolve('Cache result'), 2000);
   });
 //const p3 = (): Promise<string> => new Promise(function(resolve, reject) {

@@ -1,8 +1,7 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2018 Rick Beerendonk          !*/
 
-/* eslint @typescript-eslint/no-array-constructor: 1 */
-/* eslint @typescript-eslint/no-for-in-array: 1 */
+/* eslint @typescript-eslint/no-for-in-array: 0 */
 
 const players = [];
 players[0] = 'Rafael Nadal';

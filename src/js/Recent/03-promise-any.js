@@ -8,11 +8,11 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 
 const p1 = () =>
-  new Promise(function (resolve, reject) {
+  new Promise(function (resolve) {
     setTimeout(() => resolve('Resolved 1'), 3000);
   });
 const p2 = () =>
-  new Promise(function (resolve, reject) {
+  new Promise(function (resolve) {
     setTimeout(() => resolve('Resolved 2'), 2000);
   });
 const p3 = () =>

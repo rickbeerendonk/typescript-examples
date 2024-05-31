@@ -8,7 +8,7 @@
 // ES 2017
 
 const p1 = () =>
-  new Promise(function (resolve, reject) {
+  new Promise(function (resolve) {
     setTimeout(function () {
       return resolve('Resolved');
     }, 2000);

@@ -1,19 +1,19 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
-/* eslint no-unused-vars:warn */
-/* eslint @typescript-eslint/restrict-template-expressions: warn */
-/* eslint @typescript-eslint/no-unsafe-call: warn */
-/* eslint @typescript-eslint/no-unsafe-member-access: warn */
+/* eslint-disable no-unused-vars */
+/* eslint-disable @typescript-eslint/restrict-template-expressions */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 
 'use strict';
 
 const p1 = () =>
-  new Promise(function (resolve, reject) {
+  new Promise(function (resolve) {
     setTimeout(() => resolve('Resolved 1'), 3000);
   });
 const p2 = () =>
-  new Promise(function (resolve, reject) {
+  new Promise(function (resolve) {
     setTimeout(() => resolve('Resolved 2'), 2000);
   });
 const p3 = () =>

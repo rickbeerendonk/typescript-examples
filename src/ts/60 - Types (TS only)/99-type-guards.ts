@@ -29,13 +29,13 @@ let value: Union;
 // Assigning an object of type First to 'value'
 value = { same: 'Same', unique1: 1 };
 
-console.log('Is First?', isFirst(value));    // true
-console.log('Is Second?', isSecond(value));  // false
+console.log('Is First?', isFirst(value)); // true
+console.log('Is Second?', isSecond(value)); // false
 
 // Assigning an object of type Second to 'value'
 value = { same: 'Same', unique2: 2 };
 
-console.log('Is First?', isFirst(value));    // false
-console.log('Is Second?', isSecond(value));  // true
+console.log('Is First?', isFirst(value)); // false
+console.log('Is Second?', isSecond(value)); // true
 
 export {};

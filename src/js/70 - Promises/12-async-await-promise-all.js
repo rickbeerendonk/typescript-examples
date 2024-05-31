@@ -7,11 +7,11 @@
 // ES 2017
 
 const p1 = () =>
-  new Promise(function (resolve, reject) {
+  new Promise(function (resolve) {
     setTimeout(() => resolve('Resolved 1'), 2000);
   });
 const p2 = () =>
-  new Promise(function (resolve, reject) {
+  new Promise(function (resolve) {
     setTimeout(() => resolve('Resolved 2'), 1000);
   });
 const p3 = () =>

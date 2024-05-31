@@ -5,7 +5,7 @@
 
 // ES 2018
 
-const p1: Promise<string> = new Promise(function (resolve, reject) {
+const p1: Promise<string> = new Promise(function (resolve) {
   setTimeout(() => resolve('Resolved'), 2000);
 });
 const p2: Promise<string> = new Promise(function (resolve, reject) {

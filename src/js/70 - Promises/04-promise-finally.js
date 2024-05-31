@@ -7,7 +7,7 @@
 
 // ES 2018
 
-let p1 = new Promise(function (resolve, reject) {
+let p1 = new Promise(function (resolve) {
   setTimeout(() => resolve('Resolved'), 2000);
 });
 let p2 = new Promise(function (resolve, reject) {

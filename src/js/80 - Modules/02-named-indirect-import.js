@@ -7,4 +7,4 @@
 import { square } from './02-named-indirect-export';
 
 console.log(square(3)); // 9
-console.log(cube(3)); // ReferenceError
+//console.log(cube(3)); // ReferenceError
