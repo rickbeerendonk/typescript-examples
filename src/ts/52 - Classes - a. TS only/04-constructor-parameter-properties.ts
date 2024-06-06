@@ -2,7 +2,10 @@
 /*! Copyright © 2019 Rick Beerendonk          !*/
 
 class MyClass5 {
-  constructor(private firstName: string, private lastName: string) {}
+  constructor(
+    private firstName: string,
+    private lastName: string
+  ) {}
 
   getName() {
     return `${this.firstName} ${this.lastName}`;
