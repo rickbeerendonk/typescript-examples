@@ -10,9 +10,9 @@ interface TownInfo {
 type Town = 'home' | 'work' | 'leisure';
 
 const x: Record<Town, TownInfo> = {
-  home: { name: 'Hillegom' },
+  home: { name: 'Lisse' },
   work: { name: 'Oslo' },
-  leisure: { name: 'Lisse' }
+  leisure: { name: 'Hillegom' }
 };
 
 console.log(x);
