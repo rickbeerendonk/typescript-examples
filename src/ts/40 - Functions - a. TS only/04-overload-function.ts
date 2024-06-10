@@ -5,9 +5,9 @@ type ObjWithName = {
   name: string;
 };
 
-// Declarations
-function five(a: ObjWithName): string;
+// Declaration
 function five(a: string, b: number): string;
+function five(a: ObjWithName): string;
 // Implementation
 function five(a: string | ObjWithName, b?: number): string {
   return b !== undefined ? <string>a + b.toString() : (<ObjWithName>a).name;
