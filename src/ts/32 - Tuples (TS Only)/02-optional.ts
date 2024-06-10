@@ -10,6 +10,7 @@ f = [1, 'two'];
 console.log(f); // [1, 'two']
 
 f = [1, undefined];
+console.log(f); // [1, undefined]
 f = [1];
 console.log(f); // [1]
 
