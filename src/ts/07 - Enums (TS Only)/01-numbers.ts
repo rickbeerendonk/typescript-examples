@@ -13,8 +13,8 @@ console.log(Color.B); // 2
 
 console.log(Color[0]); // R
 console.log(Color[1]); // G
-console.log(Color[2]); // undefined
-console.log(Color[3]); // B
+console.log(Color[2]); // B
+console.log(Color[3]); // undefined
 
 console.log('---');
 
