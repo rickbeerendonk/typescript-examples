@@ -18,5 +18,6 @@ capitalCities['France'] = 'Paris';
 capitalCities['The Netherlands'] = 'Amsterdam';
 
 console.log(capitalCities['France']);
+console.log(JSON.stringify(capitalCities));
 
 export {};
