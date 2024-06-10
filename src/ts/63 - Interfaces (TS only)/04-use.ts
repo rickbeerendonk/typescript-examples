@@ -12,7 +12,7 @@ function show(person: IPerson) {
 
 show(new Person('Alexandra'));
 
-// Fine to also have an age, because might not exclusively be to call show().
+// Fine to also have an age, because is not exclusively to call show().
 const obj = { name: 'Benjamin', age: 100 };
 show(obj);
 

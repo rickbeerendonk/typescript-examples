@@ -10,6 +10,11 @@ const t: [number, string] = [1, 'two'];
 // Following line doesn't compile
 //t = ['one', 2];
 
+//t.pop();
+//t.push('three');
+
+// t[2] = 3;
+
 console.log(t); // [1, 'two']
 
 export {};

@@ -13,11 +13,11 @@ console.log(Color.B); // BLUE
 
 console.log('---');
 
-// Enum to String
+// Enum
 let c: Color = Color.R;
 console.log(c);
 
-// String to Enum
+// String to Color
 c = 'BLUE' as Color;
 console.log(c);
 
