@@ -11,6 +11,18 @@ normal=$(tput sgr0)
 # Clear terminal
 clear
 
+# Search the TypeScript compiler (preferred: locally in node_modules/.bin, otherwise global)
+if [[ -x "$SCRIPT_DIR/../node_modules/.bin/tsc" ]]; then
+    TSC="$SCRIPT_DIR/../node_modules/.bin/tsc"
+else
+    TSC=$(command -v tsc)
+fi
+
+if [[ -z "$TSC" ]]; then
+    echo "${blue}${bold}error:${normal}${color_off} TypeScript compiler (tsc) not found."
+    exit 1
+fi
+
 # Function to comment out 'export {}' at the bottom of the TypeScript file
 comment_export_line() {
     local temp_file="$1"
@@ -20,8 +32,9 @@ comment_export_line() {
 if [[ $FILE == *.ts ]]; then
     # TypeScript
     echo "${blue}${bold}info:${normal}${color_off} TypeScript"
-    # Show compiler version
-    tsc -v
+    
+    # Show the compiler version
+    "$TSC" -v
     echo
 
     # Create a temporary file
@@ -31,7 +44,7 @@ if [[ $FILE == *.ts ]]; then
     comment_export_line "$TEMP_FILE"
 
     COMPILED_FILE=${TEMP_FILE%.ts}.js
-    tsc "$TEMP_FILE" --outFile "$COMPILED_FILE"
+    "$TSC" "$TEMP_FILE" --outFile "$COMPILED_FILE"
     if [[ $? -ne 0 ]]; then
         echo "${blue}${bold}error:${normal}${color_off} TypeScript compilation failed"
         rm "$TEMP_FILE"
@@ -47,9 +60,5 @@ if [[ $FILE == *.ts ]]; then
     # Remove temporary file
     rm "$TEMP_FILE"
 else
-    echo "${blue}${bold}error:${normal}${color_off} Not a TypeScript file"
+    echo "${blue}${bold}error:${normal}${color_off} Geen TypeScript-bestand"
 fi
-
-# This script assumes that tsc (TypeScript compiler) 
-# and node (Node.js) are installed 
-# and are available in the system PATH
