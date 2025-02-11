@@ -13,7 +13,7 @@ function log2(value: Required<Intf1>) {
 
 log2({ first: 1, second: 2 }); // { first: 1, second: 2, }
 
-// Next line will fail to compile:
+// Next lines will fail to compile:
 //log2({});
 //log2({ first: 1 });
 //log2({ second: 2 });
