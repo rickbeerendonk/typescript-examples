@@ -25,6 +25,7 @@ const intf1: IMyInterface1 = implementor;
 const intf2: IMyInterface2 = implementor;
 
 console.log(intf1.first());
+console.log(intf2.first());
 console.log(intf2.second());
 
 export {};
