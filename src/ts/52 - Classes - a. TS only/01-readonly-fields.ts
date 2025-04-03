@@ -12,6 +12,6 @@ class MyClass1 {
 const myObj1 = new MyClass1(true);
 
 // Following line doesn't compile
-// myObj1.isReadOnly = false;
+//myObj1.isReadOnly = false;
 
 console.log(myObj1.isReadOnly); // true

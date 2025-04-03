@@ -29,6 +29,6 @@ const myObj3 = new MyClass3();
 myObj3.showValues();
 
 // Following lines don't compile
-// console.log(myObj2.priv);
-// console.log(myObj2.prot);
+//console.log(myObj2.priv);
+//console.log(myObj2.prot);
 console.log(myObj2.publ);
