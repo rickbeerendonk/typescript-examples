@@ -2,7 +2,7 @@
 /*! Copyright © 2015 Rick Beerendonk          !*/
 
 class Base {
-  private name: string;
+  name: string;
 
   constructor(name: string) {
     this.name = name;
@@ -13,7 +13,7 @@ class Base {
 }
 
 class Account extends Base {
-  private balance: number;
+  balance: number;
 
   constructor(name: string) {
     super(name);
