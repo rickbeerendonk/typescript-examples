@@ -17,4 +17,8 @@ log2({ first: null, second: null });
 log2({ first: null, second: 2 });
 log2({ first: 1, second: 2 });
 
+// Will not compile:
+//log2({ first: 1, second: undefined });
+//log2({ first: 1 });
+
 export {};
