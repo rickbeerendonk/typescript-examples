@@ -18,7 +18,7 @@ class Fourth {
 }
 
 function genericFunc<T extends First>(value: T) {
-  console.log(value);
+  console.log(value.prop1);
 }
 
 // Works: Obvious
@@ -28,6 +28,7 @@ genericFunc(new Second());
 // Works: Less obvious
 genericFunc(new Third());
 genericFunc({ prop1: 123 });
+genericFunc({ prop1: 123, prop2: 456 });
 
 // Doesn't work
 //genericFunc(new Fourth());
