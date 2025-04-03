@@ -44,6 +44,9 @@ class Account extends Base {
   }
 }
 
+// Doesn't compile:
+//const abstr = new AbstractBase();
+
 const acc = new Account('Rick');
 acc.deposit(100);
 acc.withdraw(25);
