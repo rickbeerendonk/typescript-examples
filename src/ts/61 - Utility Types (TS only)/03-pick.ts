@@ -5,7 +5,7 @@ interface Intf {
   prop1: string;
   prop2: string;
   prop3: boolean;
-  prop4: number;
+  prop4?: number;
 }
 
 type IntfPart = Pick<Intf, 'prop3' | 'prop4'>;
