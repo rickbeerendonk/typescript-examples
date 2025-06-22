@@ -5,11 +5,22 @@
 
 // https://github.com/tc39/proposal-nullish-coalescing
 
-console.log('undefined:', undefined ?? 'other');
-console.log('null:', null ?? 'other');
-console.log('"":', '' ?? 'other');
-console.log('0:', 0 ?? 'other');
-console.log('false:', false ?? 'other');
+let value: undefined | null | string | number | boolean;
+
+value = undefined;
+console.log('undefined:', value ?? 'other');
+
+value = null;
+console.log('null:', value ?? 'other');
+
+value = '';
+console.log('"":', value ?? 'other');
+
+value = 0;
+console.log('0:', value ?? 'other');
+
+value = false;
+console.log('false:', value ?? 'other');
 
 // undefined: other
 // null: other
