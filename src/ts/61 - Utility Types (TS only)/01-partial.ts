@@ -16,7 +16,8 @@ log2({}); // {}
 log2({ second: 2 }); // { second: 2 }
 log2({ first: 1, third: 3 }); // { first: 1, third: 3 }
 
-// Next line will fail to compile:
+// Next lines will fail to compile:
+//log2({ first: 'one'})
 //log2({ fourth: 4 }); // { fourth: 4 }
 
 export {};
