@@ -12,20 +12,19 @@
     "url": "https://github.com/rickbeerendonk/typescript-examples/issues"
   },
   "homepage": "https://github.com/rickbeerendonk/typescript-examples#readme",
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run validate"
-    }
+  "simple-git-hooks": {
+    "pre-commit": "npm run validate"
   },
   "devDependencies": {
-    "husky": "^4",
     "oxlint": "^1",
     "oxlint-tsgolint": "^7",
     "prettier": "^3",
     "rimraf": "^6",
+    "simple-git-hooks": "^2",
     "typescript": "^7"
   },
   "scripts": {
+    "prepare": "simple-git-hooks",
     "build": "npm run clean && node ./node_modules/typescript/bin/tsc --build",
     "build-watch": "npm run build -- --watch",
     "clean": "rimraf build",
