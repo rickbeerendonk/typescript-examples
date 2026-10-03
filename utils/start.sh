@@ -44,7 +44,7 @@ if [[ $FILE == *.ts ]]; then
     comment_export_line "$TEMP_FILE"
 
     COMPILED_FILE=${TEMP_FILE%.ts}.js
-    "$TSC" "$TEMP_FILE" --outFile "$COMPILED_FILE"
+    "$TSC" "$TEMP_FILE" --target es2025 --ignoreConfig
     if [[ $? -ne 0 ]]; then
         echo "${blue}${bold}error:${normal}${color_off} TypeScript compilation failed"
         rm "$TEMP_FILE"
@@ -54,11 +54,17 @@ if [[ $FILE == *.ts ]]; then
     if [[ -f "$COMPILED_FILE" ]]; then
         clear
         node "$COMPILED_FILE"
+        STATUS=$?
         rm "$COMPILED_FILE"
+    else
+        echo "${blue}${bold}error:${normal}${color_off} Compiled JavaScript file not found."
+        STATUS=1
     fi
 
     # Remove temporary file
     rm "$TEMP_FILE"
+    exit "$STATUS"
 else
     echo "${blue}${bold}error:${normal}${color_off} Geen TypeScript-bestand"
+    exit 1
 fi
