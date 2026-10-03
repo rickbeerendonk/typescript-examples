@@ -2,7 +2,7 @@
 ## TypeScript Examples
 #################
 
-build/
+src/js/
 *.tsbuildinfo
 
 #################
