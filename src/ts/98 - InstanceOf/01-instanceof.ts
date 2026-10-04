@@ -1,8 +1,6 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2018 Rick Beerendonk          !*/
 
-/* eslint-disable @typescript-eslint/no-array-constructor */
-
 // TS: Doesn't compile
 //console.log(1 instanceof Number); // false
 console.log(new Number(1) instanceof Number); // true

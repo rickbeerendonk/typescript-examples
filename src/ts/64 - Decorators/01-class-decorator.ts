@@ -1,9 +1,9 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2019 Rick Beerendonk          !*/
 
-/* eslint-disable @typescript-eslint/ban-types */
+type ClassConstructor = abstract new (...args: never[]) => object;
 
-function myClassDecorator(constructor: Function) {
+function myClassDecorator(constructor: ClassConstructor) {
   console.log(`MyClassDecorator for "${constructor.toString()}" executed.`);
 }
 

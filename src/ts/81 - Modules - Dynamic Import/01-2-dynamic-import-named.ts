@@ -1,13 +1,9 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2019 Rick Beerendonk          !*/
 
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-
 // ES 2020
 
-let language = 'en';
-language = 'es';
+const language = 'es';
 
 let lib;
 switch (language) {

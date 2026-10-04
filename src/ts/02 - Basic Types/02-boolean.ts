@@ -1,8 +1,6 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2018 Rick Beerendonk          !*/
 
-/* eslint-disable no-var */
-
 var a = true;
 console.log('a:', a); // true
 console.log('typeof(a):', typeof a); // boolean

@@ -1,8 +1,6 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2019 Rick Beerendonk          !*/
 
-/* eslint-disable no-case-declarations */
-
 enum Color {
   R,
   G,

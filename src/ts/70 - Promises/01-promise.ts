@@ -1,15 +1,13 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2015 Rick Beerendonk          !*/
 
-/* eslint no-unused-vars:warn */
-
 const p1 = () =>
   new Promise(function (resolve) {
     setTimeout(() => resolve('Resolved'), 2000);
   });
 const p2 = () =>
   new Promise(function (resolve, reject) {
-    setTimeout(() => reject('Rejected'), 1000);
+    setTimeout(() => reject(new Error('Rejected')), 1000);
   });
 
 p1()

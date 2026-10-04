@@ -1,8 +1,6 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2018 Rick Beerendonk          !*/
 
-/* eslint-disable prefer-rest-params */
-
 function test() {
   // var arguments = [true, 2, "three"]; // But not a real array!
 

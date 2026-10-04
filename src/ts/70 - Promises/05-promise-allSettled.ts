@@ -1,8 +1,6 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2019 Rick Beerendonk          !*/
 
-/* eslint no-unused-vars:warn */
-
 // ES 2020
 
 const p1 = (): Promise<string> =>
@@ -15,7 +13,7 @@ const p2 = (): Promise<string> =>
   });
 const p3 = (): Promise<string> =>
   new Promise(function (resolve, reject) {
-    setTimeout(() => reject('Rejected 3'), 1500);
+    setTimeout(() => reject(new Error('Rejected 3')), 1500);
   });
 
 Promise.allSettled([p1(), p2(), p3()])

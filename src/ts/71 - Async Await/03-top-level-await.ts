@@ -1,9 +1,6 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
-/* eslint-disable no-undef */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-
 // TS 3.8
 
 // https://github.com/tc39/proposal-top-level-await

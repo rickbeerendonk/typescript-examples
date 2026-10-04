@@ -1,9 +1,6 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2018 Rick Beerendonk          !*/
 
-/* eslint-disable no-var */
-/* eslint-disable @typescript-eslint/no-inferrable-types */
-
 // Whole number
 var a: number = 123;
 console.log('a:', a); // 123

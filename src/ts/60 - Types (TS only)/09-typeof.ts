@@ -1,8 +1,6 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2025 Rick Beerendonk          !*/
 
-/* eslint-disable prefer-const */
-
 const original = { name: 'Alexandra', age: 34 };
 
 let copy: typeof original;

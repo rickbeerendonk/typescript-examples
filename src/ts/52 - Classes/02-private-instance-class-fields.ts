@@ -26,5 +26,4 @@ const test = new Test();
 
 console.log('Public value:', test.publicValue);
 
-// eslint-disable-next-line @typescript-eslint/no-unsafe-call
 console.log('Sum:', test.sum());

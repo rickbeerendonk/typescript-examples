@@ -1,11 +1,6 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
-/* eslint-disable no-unused-vars */
-/* eslint-disable @typescript-eslint/restrict-template-expressions */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-
 'use strict';
 
 const p1 = () =>
@@ -18,7 +13,7 @@ const p2 = () =>
   });
 const p3 = () =>
   new Promise(function (resolve, reject) {
-    setTimeout(() => reject('Rejected 3'), 1000);
+    setTimeout(() => reject(new Error('Rejected 3')), 1000);
   });
 
 Promise.any([p1(), p2(), p3()])

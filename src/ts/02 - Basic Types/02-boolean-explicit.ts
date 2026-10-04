@@ -1,9 +1,6 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2018 Rick Beerendonk          !*/
 
-/* eslint-disable no-var */
-/* eslint-disable @typescript-eslint/no-inferrable-types */
-
 var a: boolean = true;
 console.log('a:', a); // true
 console.log('typeof(a):', typeof a); // boolean

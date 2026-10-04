@@ -1,8 +1,6 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2017 Rick Beerendonk          !*/
 
-/* eslint no-unused-vars:warn */
-
 // ES 2017
 
 const p1 = () =>
@@ -15,7 +13,7 @@ const p2 = () =>
   });
 const p3 = () =>
   new Promise(function (resolve, reject) {
-    setTimeout(() => reject('Rejected 3'), 1500);
+    setTimeout(() => reject(new Error('Rejected 3')), 1500);
   });
 
 void (async function () {

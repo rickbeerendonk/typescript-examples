@@ -1,8 +1,6 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2018 Rick Beerendonk          !*/
 
-/* eslint-disable @typescript-eslint/require-await */
-
 // ES 2018
 
 async function* asyncTest() {

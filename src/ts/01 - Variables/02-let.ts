@@ -1,8 +1,7 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2015 Rick Beerendonk          !*/
 
-/* eslint no-constant-condition:off */
-/* eslint-disable prefer-const */
+/* oxlint-disable no-constant-condition */
 
 // NO set value (before declaration)
 // a = 1;

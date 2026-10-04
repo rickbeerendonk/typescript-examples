@@ -1,8 +1,6 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2015 Rick Beerendonk          !*/
 
-/* eslint no-unused-vars:warn */
-
 const p1 = (): Promise<string> =>
   new Promise(function (resolve) {
     setTimeout(() => resolve('Server result'), 4000);
