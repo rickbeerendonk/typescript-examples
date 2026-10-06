@@ -2,9 +2,9 @@
 /*! Copyright © 2024 Rick Beerendonk          !*/
 
 enum Color {
-  'R', // 0
-  'G', // 1
-  'B' // 2
+  R, // 0
+  G, // 1
+  B // 2
 }
 
 console.log(Color.R); // 0
@@ -23,7 +23,7 @@ let c: Color = Color.G;
 console.log(c);
 
 // Number to Enum
-c = 2 as Color;
+c = 2;
 console.log(c);
 
 export {};
