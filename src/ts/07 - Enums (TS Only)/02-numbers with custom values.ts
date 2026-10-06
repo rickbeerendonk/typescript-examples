@@ -2,9 +2,9 @@
 /*! Copyright © 2019 Rick Beerendonk          !*/
 
 enum Color {
-  'R' = 1,
-  'G',
-  'B' = 4
+  R = 1,
+  G,
+  B = 4
 }
 
 console.log(Color.R); // 1
